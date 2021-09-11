@@ -1,0 +1,50 @@
+
+<div class="container">
+
+    <form class="edit-post-form">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
+            </div>
+            <input id="post-title" type="text" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default" name="post-title" value="{{post.title}}" maxlength="50" >
+        </div>
+
+        <div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Body</span>
+                </div>
+                <textarea id="post-content" class="form-control" aria-label="With textarea"
+                    name="post-content" maxlength="255">{{post.post_content}}</textarea>
+            </div>
+
+        </div>
+        <button type="submit" class="btn btn-primary text-light create">Update</button>
+        <button type="submit" class="btn btn-danger text-light create delete-btn">Delete</button>
+    </form>
+
+
+
+    {{#if loggedIn}}
+
+    <form class="comment-form">
+        <div class="form-group">
+            <textarea class="form-control commentBox text-light" name="comment-body"  placeholder="Type a Comment Here"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Comment</button>
+    </form>
+
+    {{/if}}
+
+    {{> comments post.comments}}
+</div>
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>
+{{/if}}
