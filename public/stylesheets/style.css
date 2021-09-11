@@ -1,0 +1,161 @@
+html, body {
+    height: 100%;
+    font-size: x-large;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.nb {
+    margin-bottom: 2%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.bgd {
+    background-color: rgb(70, 70, 83);
+}
+
+.row {
+    padding: 10px;
+}
+
+.post {
+    margin-bottom: 2%;
+    line-height: 150%;
+}
+
+.post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: #7d7d7d;
+}
+
+.meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+}
+
+.post-li {
+    border-radius: 15px;
+}
+
+.points {
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+.upv {
+    padding-right: 5px;
+}
+
+.post-list {
+    margin: 3%;
+}
+
+a, .header {
+    text-decoration: none !important;
+    color: white;
+    transition: color .1s;
+}
+
+a:hover {
+    color: #dadada;
+}
+
+.log {
+    margin-top: 20px;
+}
+
+.postContent {
+    padding: 10px;
+    margin: 10px;
+    border-top: 2px solid white;
+}
+
+.comment {
+    padding: 10px;
+    margin-top: 10px;
+    border: 3px solid #343a40;
+    border-radius: 15px;
+    box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.41);
+}
+
+.commentBox {
+    border: 3px solid #343a40;
+    background: #7b8796;
+    border-radius: 15px;
+}
+
+.commentBox::placeholder {
+    color: rgb(216, 216, 216);
+}
+
+.commentBox:focus {
+    background: #343a40;
+}
+
+.comment-form {
+    margin: 3% 0 3% 0;
+}
+
+.comment-form button {
+    margin-right: 10px;
+}
+
+.yourPosts {
+    list-style: none;
+    padding-inline-start: 0px !important;
+}
+
+.newPost {
+    margin-bottom: 5%;
+}
+
+.create {
+    margin-top: 2%;
+}
+
+.editBtn {
+    margin: auto;
+}
+
+.postWithEdit {
+    margin-bottom: 10px;
+}
+
+.delete-btn {
+    margin-left: 5px;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    margin-top: 2%;
+    padding: 5px;
+    font-size: 110%;
+}
+
+.links {
+    line-height: normal;
+    margin-left: 2%;
+}
+
+.lnk {
+    margin-bottom: 2px;
+}
+
+.thx {
+    margin: auto;
+}
+
+.ftrRow {
+    margin: 0;
+}

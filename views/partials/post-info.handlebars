@@ -1,0 +1,21 @@
+<article class="post">
+    <div class="row">
+        <div class="col-1 points d-flex justify-content-center align-items-center">
+            <span class="oi oi-arrow-circle-top upv text-success"></span>
+            {{vote_count}}
+        </div>
+        <div class="col-11">
+            <div class="title">
+                <a href="/post/{{id}}">{{title}}</a>
+            </div>
+        
+            <div class="meta">
+        
+                by {{user.username}} on
+                {{format_date created_at}}
+                |
+                <a href="/post/{{id}}"> {{comments.length}} {{format_plural "comment" comments.length}}</a>
+            </div>
+        </div>
+    </div>
+</article>
