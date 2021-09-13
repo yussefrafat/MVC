@@ -8,3 +8,7 @@ This project is the MVC paradigm to create a blog style website where users can 
 - Node JS
 - Express
 - MySQL
+
+## Video 
+https://user-images.githubusercontent.com/82121166/133014182-430f5dab-ee92-454e-b950-1ff60b49be16.mov
+
